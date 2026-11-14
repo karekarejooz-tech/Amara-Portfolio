@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1d3023"><meta name="description" content="Academic and extracurricular achievements of Amara Sumi D. Erorita.">
+<title>Achievements | Amara Sumi D. Erorita</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.ach-page{height:calc(100svh - 64px);padding:clamp(9px,1.5vh,17px) 0;position:relative;isolation:isolate}
+.ach-page:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.14;pointer-events:none;background-image:radial-gradient(rgba(231,218,181,.28) .6px,transparent .6px);background-size:5px 5px}
+.ach-shell{width:min(1480px,calc(100% - 64px));height:100%;margin:auto;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;gap:clamp(7px,1.15vh,12px)}
+.heading{text-align:center}.heading h1{font:italic 600 clamp(34px,4.2vw,54px)/.95 'Playfair Display',Georgia,serif;letter-spacing:-.035em;margin:0;color:var(--cream)}
+.heading p{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:5px 0 0}
+.main-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;min-height:0}
+.section-panel{padding:clamp(11px,1.5vh,17px) clamp(13px,1.6vw,22px);min-height:0}
+.section-title{display:flex;align-items:center;gap:12px;margin:0 0 10px;font:italic 500 clamp(19px,2vw,25px)/1 'Playfair Display',serif;color:var(--gold)}
+.section-title:after{content:"";height:1px;background:rgba(214,183,109,.42);flex:1}
+.timeline{position:relative;padding-left:19px;display:grid;gap:clamp(5px,.85vh,9px)}
+.timeline:before{content:"";position:absolute;left:4px;top:5px;bottom:7px;width:1px;background:rgba(214,183,109,.65)}
+.school{position:relative;padding:0 0 6px;border-bottom:1px solid rgba(242,234,216,.1)}
+.school:last-child{border:0;padding-bottom:0}
+.school:before{content:"";position:absolute;left:-19px;top:4px;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(214,183,109,.14)}
+.school h3{font-size:clamp(11px,.95vw,13px);line-height:1.2;color:var(--cream);margin:0 0 3px;font-weight:700}
+.school .period{font-size:8px;text-transform:uppercase;letter-spacing:.13em;color:var(--gold);margin-left:5px;font-weight:600}
+.school p{font-size:clamp(9px,.78vw,10.5px);line-height:1.35;color:#d0d0bf;margin:0}
+.school strong{color:#f4e5bd;font-weight:700}
+.beyond-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.beyond-item{padding:9px 8px;background:rgba(242,234,216,.045);border:1px solid rgba(242,234,216,.1);min-width:0}
+.beyond-item .symbol{font-size:17px;color:var(--gold);margin-bottom:5px}
+.beyond-item h3{font-size:clamp(10px,.9vw,12px);line-height:1.2;margin:0 0 4px;color:var(--cream)}
+.beyond-item p{font-size:9px;line-height:1.35;color:#c9c8b8;margin:0}
+.gallery{height:clamp(105px,16vh,145px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;min-height:0}
+.gallery figure{margin:0;position:relative;overflow:hidden;border:1px solid rgba(214,183,109,.4);background:#0e1d14;min-height:0}
+.gallery img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s ease;filter:saturate(1.12) contrast(1.04)}
+.gallery figure:nth-child(2) img{object-position:center 55%}
+.gallery figure:hover img{transform:scale(1.035)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 9px 7px;background:linear-gradient(transparent,rgba(10,22,14,.9));font-size:9px;letter-spacing:.04em;color:#fff4d8}
+.orgs{border-top:1px solid rgba(214,183,109,.35);padding-top:7px;min-height:0}
+.org-head{display:flex;align-items:baseline;gap:12px;margin-bottom:7px}
+.org-head h2{font:italic 500 20px 'Playfair Display',serif;color:var(--gold);margin:0}
+.org-head p{font-size:8px;color:#c4c2b2;margin:0;letter-spacing:.08em}
+.org-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px 12px}
+.org{display:flex;align-items:center;gap:7px;min-width:0}
+.org-icon{width:26px;height:26px;flex:0 0 26px;border:1px solid rgba(214,183,109,.6);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:600 10px 'Playfair Display',serif;background:rgba(214,183,109,.07)}
+.org strong{display:block;color:#f0eadb;font-size:9px;line-height:1.15}
+.org small{display:block;color:#c4c2b2;font-size:7.5px;line-height:1.2;margin-top:2px}
+@media(max-width:760px){
+ .ach-page{height:calc(100svh - 56px);padding:7px 0}
+ .ach-shell{width:calc(100% - 20px);gap:5px}
+ .heading h1{font-size:clamp(23px,5vw,34px)}.heading p{font-size:6px;margin-top:2px}
+ .main-grid{grid-template-columns:1.1fr .9fr;gap:5px}
+ .section-panel{padding:6px}
+ .section-title{font-size:14px;margin-bottom:5px}
+ .timeline{padding-left:12px;gap:3px}.timeline:before{left:3px}.school:before{left:-12px;width:6px;height:6px}
+ .school{padding-bottom:3px}.school h3{font-size:8px}.school .period{font-size:5px;margin-left:2px}.school p{font-size:6.5px;line-height:1.2}
+ .beyond-list{grid-template-columns:1fr;gap:3px}.beyond-item{padding:4px;display:grid;grid-template-columns:15px 1fr;column-gap:4px}.beyond-item .symbol{grid-row:span 2;font-size:10px;margin:0}.beyond-item h3{font-size:7px;margin:0}.beyond-item p{font-size:6px}
+ .gallery{height:clamp(70px,14vh,105px);gap:4px}.gallery figcaption{font-size:6px;padding:12px 4px 3px}
+ .orgs{padding-top:4px}.org-head{margin-bottom:3px}.org-head h2{font-size:13px}.org-head p{font-size:5px}
+ .org-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+ .org{gap:3px}.org-icon{width:16px;height:16px;flex-basis:16px;font-size:6px}.org strong{font-size:6px}.org small{font-size:5px}
+}
+@media(max-height:650px) and (min-width:761px){
+ .ach-shell{gap:5px}.heading h1{font-size:34px}.main-grid{gap:8px}.section-panel{padding:8px 12px}.timeline{gap:4px}.school{padding-bottom:3px}.gallery{height:105px}.orgs{padding-top:4px}.org-grid{gap:4px 8px}
+}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="nav-wrap"><a class="brand" href="index.html">✳ ASE</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="personal-information.html">Personal Information</a><a href="achievements.html" aria-current="page">Achievements</a><a href="friends-family.html">Friends &amp; Family</a></nav></div></header>
+<main class="ach-page">
+<div class="ach-shell">
+<div class="heading"><h1>Achievements</h1><p>Academic milestones · Beyond the classroom · Involvement</p></div>
+<div class="main-grid">
+<section class="panel section-panel">
+<h2 class="section-title">Academic Journey</h2>
+<div class="timeline">
+<article class="school"><h3>SPED Center Baguio <span class="period">Kindergarten – Grade 2</span></h3><p><strong>Consistent Top Student</strong></p></article>
+<article class="school"><h3>Elpidio Quirino Elementary School <span class="period">Grades 3–6</span></h3><p><strong>Valedictorian</strong> · Campus Journalist · Student Council Vice President · Girl Scout School Charter President</p></article>
+<article class="school"><h3>Philippine Science High School <span class="period">Junior &amp; Senior High</span></h3><p><strong>Consistent DL</strong> · Award in Environmental Research · Intramurals Cheerleader &amp; Mascot · Theater/Dramaturgy Club Secretary · <strong>Irisan Watershed Mapping &amp; Weather Pattern Analysis</strong> (Research and Mapping, 2024–2025)</p></article>
+<article class="school"><h3>University of the Cordilleras</h3><p><strong>BS Information Technology</strong> · Network and Security</p></article>
+</div>
+</section>
+<section class="panel section-panel">
+<h2 class="section-title">Beyond the Classroom</h2>
+<div class="beyond-list">
+<article class="beyond-item"><div class="symbol">↗</div><h3>Competitive Running</h3><p>Trophies and race placements in various competitions</p></article>
+<article class="beyond-item"><div class="symbol">✦</div><h3>Taekwondo</h3><p>Blue Belt · 2019</p></article>
+<article class="beyond-item"><div class="symbol">♩</div><h3>Speaking Engagement</h3><p>Guest Speaker · Educare Graduation · 2025</p></article>
+</div>
+</section>
+</div>
+<div class="gallery" aria-label="Achievement photographs">
+<figure><img src="assets/images/running-trophies.webp" alt="Running trophies and race awards"><figcaption>Running awards</figcaption></figure>
+<figure><img src="assets/images/group-photo.png" alt="Graduation group photograph with Amara holding her certificate"><figcaption>Recognition &amp; graduation</figcaption></figure>
+<figure><img src="assets/images/certificate.webp" alt="Amara holding a certificate with classmates"><figcaption>Academic recognition</figcaption></figure>
+<figure><img src="assets/images/speaking-engagement.webp" alt="Amara speaking at the Educare graduation ceremony"><figcaption>Guest speaking · 2025</figcaption></figure>
+</div>
+<section class="orgs">
+<div class="org-head"><h2>Organizations</h2><p>Leadership · Service · Learning · Community</p></div>
+<div class="org-grid">
+<div class="org"><span class="org-icon">A</span><div><strong>ARKIW</strong><small>Member · September 2026–Present</small></div></div>
+<div class="org"><span class="org-icon">A</span><div><strong>Amnesty Philippines</strong><small>Administrative Officer · September 2026–Present</small></div></div>
+<div class="org"><span class="org-icon">aws</span><div><strong>AWS Cloud Computing</strong><small>Participation and Learning · October 2026–Present</small></div></div>
+<div class="org"><span class="org-icon">U</span><div><strong>Project Ubbog</strong><small>Contribution to Community · 2024–2025</small></div></div>
+<div class="org"><span class="org-icon">+</span><div><strong>Red Cross</strong><small>Organizational Involvement · 2021–2026</small></div></div>
+<div class="org"><span class="org-icon">✳</span><div><strong>Agham Youth International</strong><small>Science-Related Involvement · 2025–Present</small></div></div>
+<div class="org"><span class="org-icon">C</span><div><strong>CFSPi Baguio</strong><small>Volunteer Involvement · 2025–Present</small></div></div>
+</div>
+</section>
+</div>
+</main>
+</body></html>
